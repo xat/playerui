@@ -59,7 +59,7 @@ module.exports = function(opts) {
       var pos = cols * (progress / 100);
       var emptyLine = pad('', cols);
 
-      rows = getActiveLabels()
+      var rows = getActiveLabels()
         .map(function(l) {
           return pad(pad('', options.paddingLeft)
                       + pad(l.label, labelPadding)

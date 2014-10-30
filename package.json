@@ -1,6 +1,6 @@
 {
   "name": "playerui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "minimalistic mediaplayer commandline ui",
   "main": "index.js",
   "scripts": {
