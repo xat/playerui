@@ -8,7 +8,7 @@ minimalistic mediaplayer commandline ui.
 var playerui = require('playerui');
 
 // Initialize UI object
-var ui = new playerui();
+var ui = playerui();
 
 // add some labels
 ui.setLabel('source', 'Source', 'Ty Segall - Manipulator (Album)');
