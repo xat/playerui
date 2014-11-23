@@ -16,6 +16,7 @@ module.exports = function(opts) {
   var visibleLabels = [];
   var labels = {};
   var progress = 0;
+  var hidden = false;
 
   // fetch all labels currently displayed
   var getActiveLabels = function() {
@@ -44,7 +45,7 @@ module.exports = function(opts) {
       labels[name] = {
         label: label,
         value: value
-      }
+      };
       return this;
     },
 
@@ -53,7 +54,18 @@ module.exports = function(opts) {
       return this;
     },
 
+    show: function() {
+      hidden = false;
+      this.render();
+    },
+
+    hide: function() {
+      hidden = true;
+      log('');
+    },
+
     render: function() {
+      if (hidden) return;
       var cols = process.stdout.columns;
       var labelPadding = longestLabel() + options.labelPadding;
       var pos = cols * (progress / 100);
