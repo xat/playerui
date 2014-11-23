@@ -5,7 +5,10 @@ minimalistic mediaplayer commandline ui.
 ### sample
 
 ```javascript
-var ui = require('playerui');
+var playerui = require('playerui');
+
+// Initialize UI object
+var ui = new playerui();
 
 // add some labels
 ui.setLabel('source', 'Source', 'Ty Segall - Manipulator (Album)');
