@@ -22,6 +22,8 @@ module.exports = function(opts) {
   var getActiveLabels = function() {
     return visibleLabels.map(function(l) {
       return labels[l];
+    }).filter(function(l) {
+      return !!l;
     });
   };
 
