@@ -9,7 +9,7 @@
   "author": "Simon Kusterer",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^0.5.1",
+    "chalk": "^1.0.0",
     "pad": "0.0.5",
     "single-line-log": "^0.4.1",
     "xtend": "^4.0.0"
