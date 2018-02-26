@@ -80,6 +80,10 @@ module.exports = function(opts) {
                       + ': ' + l.value, cols);
         });
 
+      rows = rows.map(function(line) {
+         return line.substring(0,cols);
+      });
+
       var addPaddingTop = function(padding) {
         while (padding--) rows.unshift(emptyLine);
       };
